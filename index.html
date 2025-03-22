@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <header>
+        <nav class="flex">
+            <img src="img/svgs/logo.svg" alt="logo" class="logo">
+            <div class="svg home">
+                <img src="img/svgs/home.svg" alt="home" class="svgimg">
+            </div>
+            <div class="search-container bg">
+                <img src="img/svgs/search.svg" alt="search" class="searchimg">
+                <div class="ofinput">
+                    <input type="search" id="searchInput" placeholder="What do you want to search?" autocomplete="off">
+                    <img src="img/svgs/browse.svg" class="browse" alt="">
+                </div>
+            </div>
+            <div class="flex first">
+                <div class="hover" style="width: 80px; text-align: end;">
+                    Premium
+                </div>
+                <div class="hover" style="width: 90px; text-align: center;">
+                    Support
+                </div>
+                <div class="hover" style="width: 110px; text-align:left;">
+                    Download
+                </div>
+            </div>
+            <div class="seperator" style="margin-right: 40px;"></div>
+            <div class="second">
+                <div class="hover" style="width: 75px;">
+                    Install App
+                </div>
+                <div class="hover" style="width: 75px;">
+                    Sign up
+                </div>
+            </div>
+            <div style="width: 110px;">
+            <button>
+                <div>
+                    Log in
+                </div>
+            </button>
+        </div>
+        <div class="sidesvg hamurger">
+            <img src="img/svgs/sidebar.svg">
+        </div>
+        </nav>
+    </header>
+
+        <div class="wraper">
+<div class="aside">
+    <aside class="bg">
+        <div class="close">
+            <img src="img/svgs/close.svg" class="invert" alt="">
+        </div>
+        <div class="outerlibrary invert">
+            <div class="flex library opacity">
+                <img src="img/svgs/playlist.svg" alt="playlist" class="libraryimg">
+                <div>your Library</div>
+            </div>
+            <img class="opacity plus" src="img/svgs/plus.svg" alt="add">
+        </div>
+        <ul class="ofsong">
+
+        </ul>
+    </aside>
+</div>
+      
+        
+        <div class="ofmain">
+            <main class="bg">
+                <div class="result">
+
+                </div>
+                <div class="upper">
+                    <div class="hh">Popular artists</div>
+                    <div class="put" data-folder="artists" data-name="less"></div>
+            </div>
+            <div class="full artists">
+
+            </div>
+            <div class="upper">
+                <div class="hh">Popular albums and singles</div>
+                <div class="put" data-folder="albums" data-name="less"></div>
+            </div>
+            <div class="full albums">
+
+            </div>
+            <div class="upper">
+                <div class="hh">Popular radio</div>
+                <div class="put" data-folder="radio" data-name="less"></div>
+            </div>
+            <div class="full radio">
+
+            </div>
+            <div class="upper">
+                <div class="hh">Featured charts</div>
+                <div class="put" data-folder="charts" data-name="less"></div>
+            </div>
+            <div class="full charts">
+
+            </div>
+            <div class="upper">
+                <div class="hh">Get ready for Bed</div>
+                <div class="put" data-folder="bed" data-name="less"></div>
+            </div>
+            <div class="full bed">
+
+            </div>
+
+
+
+            <div class="grid color">
+                <div>
+                    <div class="bold">Company</div>
+                    <div class="opacity underline">About</div>
+                    <div class="opacity underline">For the jobs</div>
+                </div>
+                <div>
+                    <div class="bold notunderline">Communities</div>
+                    <div class="opacity underline">For Artists</div>
+                    <div class="opacity underline">Developers</div>
+                    <div class="opacity underline">Advertising</div>
+                    <div class="opacity underline">Investors</div>
+                    <div class="opacity underline">Vendors</div>
+                </div>
+                <div>
+                    <div class="bold notunderline">Useful links</div>
+                    <div class="opacity underline">Support</div>
+                    <div class="opacity underline">Free mobile App</div>
+                </div>
+                <div>
+                    <div class="bold notunderline">Spotify Plans</div>
+                    <div class="opacity underline">Premium Indivisual</div>
+                    <div class="opacity underline">Premium Duo</div>
+                    <div class="opacity underline">Premium Family</div>
+                    <div class="opacity underline">Premium Students</div>
+                    <div class="opacity underline">Spotify Free</div>
+                </div>
+                <div class="imgofgrid">
+                    <img class="newsvg opacity" src="img/svgs/instagram.svg" alt="insta">
+                    <img class="newsvg opacity " src="img/svgs/twitter.svg" alt="twitter">
+                    <img class="newsvg opacity" src="img/svgs/facebook.svg" alt="facebook">
+                </div>
+            </div>
+            <hr>
+            <div class="playbar">
+                <div class="vol">
+                    <img class="volsvg" src="img/svgs/volume.svg" alt="">
+                    <input type="range" class="volume">
+                </div>
+
+                <div class="outerofplaybar">
+                    <div class="songname"></div>
+                    <div class="controls flex">
+                        <img class="pre" src="img/svgs/prevsong.svg" alt="">
+                        <img class="playsvg" src="img/svgs/play.svg" alt="">
+                        <img class="next" src="img/svgs/nextsong.svg" alt="">
+                    </div>
+                    <div class="time"></div>
+                </div>
+                <input type="range" id="seekbar" min="0" max="100" value="0" step="0" class="fixed">
+            </div>
+
+            </main>
+        </div>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
